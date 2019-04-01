@@ -1,0 +1,45 @@
+{
+  "name": "__________",
+  "version": "1.0.0",
+  "description": "__________",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --hot --open",
+    "prod": "webpack --mode production",
+    "sass-lint": "sass-lint app/sass/styles.sass --verbose -q",
+    "eslint": "eslint app/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.0.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "es6-promise": "^4.2.4",
+    "fetch-ie8": "^1.5.0",
+    "json-loader": "^0.5.7",
+    "node-sass": "^4.9.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.18.2",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.8.2",
+    "eslint-watch": "^3.1.5",
+    "sass-lint": "^1.10.2"
+  }
+}
