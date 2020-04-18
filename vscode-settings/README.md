@@ -1,19 +1,26 @@
 # vscode-settings
 
-Visual Studio Code preferences / settings
+
+### files to update
+
+- `keybindings.json`
+- `settings.json`
 
 
-## Files to update
+### packages to install
 
-- keybindings.json
-- settings.json
-
-
-## Packages to install
-
-- Bracket Pair Colorizer 2
-- ESLint
-- Flow Language Support
-- GitLens - Git supercharged
-- Sass
-- vscode-faker
+- `Bracket Pair Colorizer 2`
+- `change-case`
+- `DotENV`
+- `ESLint`
+- `Flow Language Support`
+- `GitLens - Git supercharged`
+- `HTML Preview`
+- `Javascript (ES6) code snippets`
+- `Path Intellisense`
+- `Prettier - Code formatter`
+- `React Pure To Class`
+- `React-Native/React/Redux snippets for es6/es7`
+- `Rest Client`
+- `Sass`
+- `vscode-faker`

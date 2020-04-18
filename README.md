@@ -1,4 +1,4 @@
-# quick settings & preferences for rapid code development
+# my dev settings
 
 - git-tips
 - npm-config
