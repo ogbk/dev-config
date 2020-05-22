@@ -3,31 +3,21 @@
 var APP_PORT = 8080;
 
 module.exports = {
-	entry: __dirname+"/app/components/index.js",
-	output:{
-		path: __dirname+"/public", filename: 'bundle.js'
-	},
+  entry: `${__dirname}/app/components/index.js`,
+  output: {
+    path: `${__dirname}/public`,
+    filename: 'bundle.js',
+  },
   devServer:{
-    contentBase: __dirname+"/public",
+    contentBase: `${__dirname}/public`,
     port: APP_PORT
   },
-	module:{
-		rules: [
-			{
-        test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /(node_modules)/
-      },
-			{
-        test: /\.json$/,
-        loader: 'json-loader',
-        exclude: /(node_modules)/
-      },
-      {
-        test: /\.(sass|scss)$/,
-        loader: 'style-loader!css-loader!sass-loader',
-        exclude: /(node_modules)/
-      }
-		]
-	}
+  module: {
+    rules: [
+      { test: /\.js$/, use: 'babel-loader', exclude: /(node_modules)/ },
+      { test: /\.css$/i, use: ['style-loader', 'css-loader'] },
+      { test: /\.s[ac]ss$/i, use: ['style-loader', 'css-loader', 'sass-loader'] },
+      { test: /\.(txt|jl)$/i, use: 'raw-loader' },
+    ],
+  },
 }
